@@ -138,6 +138,7 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.clairs
 env/
 venv/
 ENV/
@@ -205,3 +206,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# IDE configurations
+.idea
+.vscode
+
+# Misc Macbook & database
+.DS_Store
+
