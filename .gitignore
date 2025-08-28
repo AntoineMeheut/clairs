@@ -211,6 +211,6 @@ __marimo__/
 .idea
 .vscode
 
-# Misc Macbook & database
+# Misc Macbook & application database
 .DS_Store
-
+db.sqlite3
