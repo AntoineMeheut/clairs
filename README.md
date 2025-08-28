@@ -1,4 +1,4 @@
-# clairs
+# Clairs
 Angular front-end and back-end application skeleton using the Django framework (Python)
 
 # How it works
