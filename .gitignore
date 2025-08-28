@@ -208,10 +208,11 @@ marimo/_lsp/
 __marimo__/
 
 # IDE configurations
-.idea
 .vscode
+.angular
+node_modules
+.idea
 
 # Misc Macbook & application database
 .DS_Store
-db.sqlite3
 Thumbs.db
