@@ -41,7 +41,7 @@ SIMPLE_JWT = {
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
+    # "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     "django_filters",
     "users.apps.UsersConfig",
     "articles.apps.ArticlesConfig",
+    "django_admin_shellx",
+    "django_admin_shellx_custom_admin.apps.CustomAdminConfig",
 ]
 
 MIDDLEWARE = [

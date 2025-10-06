@@ -47,3 +47,6 @@ python3 clairs-backend/manage.py runserver
 ```
 
 Now, your local server should be running, and you can access this Django/Angular application through your web browser at http://localhost:8000.
+
+#TODO
+https://pypi.org/project/django-admin-shellx/

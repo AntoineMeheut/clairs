@@ -8,5 +8,6 @@ export enum FeedMenuEnum {
   MINE = 'mine',
   GLOBAL = 'global',
   FAVORITES = 'favorites',
-  TAGS = 'tags'
+  TAGS = 'tags',
+  SPECIAL = "special"
 }
