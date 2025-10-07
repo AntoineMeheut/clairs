@@ -53,11 +53,18 @@ python3 clairs-backend/manage.py runserver
 
 Now, your local server should be running, and you can access this Django/Angular application through your web browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
+- Move to the Django backend directory:
+```shell
+cd clairs-backend 
+```
+
 - Start the Daphne server:
 ```shell
 daphne config.asgi:application -b 0.0.0.0 -p 80
 ```
 
 - Access the terminal:
-[http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
+	- [http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
+
+
 
