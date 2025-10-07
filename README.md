@@ -19,7 +19,7 @@ npm --prefix=clairs-frontend install
 npm --prefix=clairs-frontend start
 ```
 
-This command will install and start the Angular development server. You can access the Angular application through your web browser at `http://localhost:4200`.
+This command will install and start the Angular development server. You can access the Angular application through your web browser at [http://localhost:4200](http://localhost:4200)
 
 ### 2. Backend:
 - Set up a virtual environment
@@ -41,12 +41,23 @@ pip install -r clairs-backend/requirements.txt
 python3 clairs-backend/manage.py migrate
 ```
 
+- Create django admin:
+```shell
+python3 clairs-backend/manage.py createsuperuser
+```
+
 - Run the Django development server:
 ```shell
 python3 clairs-backend/manage.py runserver
 ```
 
-Now, your local server should be running, and you can access this Django/Angular application through your web browser at http://localhost:8000.
+Now, your local server should be running, and you can access this Django/Angular application through your web browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-#TODO
-https://pypi.org/project/django-admin-shellx/
+- Start the Daphne server:
+```shell
+daphne config.asgi:application -b 0.0.0.0 -p 80
+```
+
+- Access the terminal:
+[http://127.0.0.1:8000/admin/login](http://127.0.0.1:8000/admin/login)
+
