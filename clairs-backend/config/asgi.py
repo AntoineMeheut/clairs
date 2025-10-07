@@ -29,6 +29,7 @@ from django_admin_shellx.urls import websocket_urlpatterns
 
 application = ProtocolTypeRouter(
     {
+        "http": django_application,
         "websocket": AllowedHostsOriginValidator(
             AuthMiddlewareStack(URLRouter(websocket_urlpatterns))
         ),
