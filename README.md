@@ -31,36 +31,41 @@ python3 -m venv clairs-backend/.venv
 source clairs-backend/.venv/bin/activate
 ```
 
-- Install backend dependencies:
+- Install backend dependencies
 ```shell
 pip install -r clairs-backend/requirements.txt
 ```
 
-- Apply database migrations:
+- Apply database migrations
 ```shell
 python3 clairs-backend/manage.py migrate
 ```
 
-- Create django admin:
+- Create django admin
 ```shell
 python3 clairs-backend/manage.py createsuperuser
 ```
 
-- Run the Django development server:
+- Run the Django development server
 ```shell
 python3 clairs-backend/manage.py runserver
 ```
 
 Now, your local server should be running, and you can access this Django/Angular application through your web browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-- Move to the Django backend directory:
+- Move to the Django backend directory
 ```shell
 cd clairs-backend 
 ```
 
-- Start the Daphne server:
+- Start the Daphne server on macbook
 ```shell
 daphne config.asgi:application -b 0.0.0.0 -p 80
+```
+
+or on linux
+```shell
+daphne --root-path=/home/antoine/clairs/clairs-backend config.asgi:application
 ```
 
 - Access the terminal:
