@@ -24,11 +24,11 @@ This command will install and start the Angular development server. You can acce
 ### 2. Backend:
 - Set up a virtual environment
 ```shell
-python3 -m venv .clairs
+python3 -m venv clairs-backend/.venv
 ```
 
 ```shell
-source .clairs/bin/activate
+source clairs-backend/.venv/bin/activate
 ```
 
 - Install backend dependencies:

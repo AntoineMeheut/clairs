@@ -10,3 +10,6 @@ ruff==0.3.7
 django-admin-shellx==0.3.3
 daphne==4.2.1
 channels~=4.3.1
+requests==2.32.5
+cryptography==46.0.2
+tls-client==1.0.1
