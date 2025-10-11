@@ -65,7 +65,7 @@ daphne config.asgi:application -b 0.0.0.0 -p 80
 
 or on linux
 ```shell
-daphne --root-path=/home/antoine/clairs/clairs-backend config.asgi:application
+daphne --root-path=/home/ghostdog/Documents/GitHub/clairs/clairs-backend config.asgi:application -b 0.0.0.0 -p 9000
 ```
 
 - Access the terminal:
