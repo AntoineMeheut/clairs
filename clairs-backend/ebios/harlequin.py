@@ -1,12 +1,19 @@
 import requests
-url = 'https://cyber.gouv.fr/sites/default/files/2018/10/fiches-methodes-ebios_projet.pdf'
+import urllib
 
-response = requests.get(url)
-file_Path = 'research_Paper_1.pdf'
+
+response=requests.get('https://cyber.gouv.fr/sites/default/files/2018/10/fiches-methodes-ebios_projet.pdf',
+             proxies={
+                 'http': 'http://myusername:mypassword@10.20.30.40:8080',
+                 'https': 'http://myusername:mypassword@10.20.30.40:8080'
+             },
+             verify=False)
+
+file_Path = 'erm_calcul.pdf'
 
 if response.status_code == 200:
     with open(file_Path, 'wb') as file:
         file.write(response.content)
-    print('ebios : File downloaded successfully')
+    print('erm : File downloaded successfully')
 else:
-    print('ebios : Failed to download file')
+    print('erm : Failed to download file')
